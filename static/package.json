@@ -1,0 +1,7 @@
+{
+	"main": "index.html",
+	"name": "protex",
+	"window": {
+		"toolbar": true
+	}
+}
