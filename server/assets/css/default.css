@@ -3,6 +3,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing:border-box;
+	transition-duration: 1s;
 }
 
 html,body {
@@ -11,7 +12,8 @@ html,body {
 
 .container {
 	position: absolute;
-	top: 10px; bottom: 10px; left: 10px; right: 10px;
+	top: 80px; bottom: 20px; left: 20px; right: 20px;
+	padding: 15px;
 }
 
 #bg-canvas {
@@ -19,6 +21,11 @@ html,body {
 	height: 100%;
 	width: 100%;
 	z-index: -10;
+}
+
+.main-input-area {
+	height: 100%;
+	width: 100%;
 }
 
 /*end:layout*/
@@ -29,14 +36,27 @@ body {
 	background: #543;
 }
 
-.container {
-	border: solid 1px #fff;
-	border-radius: 5px;
-	background: #00000000;
-}
-
 #bg-canvas {
 	background: #272822;
+}
+
+.container {
+	border-radius: 10px;
+	background: rgba(0, 0, 0, 0);
+	border:solid 1px rgba(100,100,100,0);
+}
+
+.container:hover {
+	background:rgba(0, 0, 0, 0.4);
+	border:solid 1px rgba(100,100,100,.5);
+}
+
+.main-input-area {
+	background: none;
+	border: none;
+	color: white;
+	font-size: 1.2em;
+	font-family: "courier";
 }
 
 /*end:visual*/
